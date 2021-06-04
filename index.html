@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Company Porofile</title>
+  </head>
+  <body>
+    <div class="progressbar"></div>
+    <div class="scrollPath"></div>
+    <div
+      class="container mx-auto md:px-8 navbar mt-5 flex md:flex-row flex-col"
+    >
+      <div class="logo flex px-4 md:self-center justify-between">
+        <h5 class="text-lg font-bold">MENU</h5>
+        <div class="hamburger-menu block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 svg-menu"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="md:w-full flex justify-between md:flex-row flex-col menu-parent"
+      >
+        <div class="menu flex md:m-auto md:flex-row flex-col">
+          <h5 class="font-semibold hover:text-gray-500 cursor-pointer">
+            Funiture
+          </h5>
+          <h5 class="font-semibold hover:text-gray-500 cursor-pointer">
+            Decor & mirrors
+          </h5>
+          <h5 class="font-semibold hover:text-gray-500 cursor-pointer">
+            Lighting
+          </h5>
+          <h5 class="font-semibold hover:text-gray-500 cursor-pointer">
+            Bedding
+          </h5>
+        </div>
+        <div class="login">
+          <button
+            type="button"
+            class="md:bg-black px-4 py-2 text-black md:text-white font-semibold md:font-bold"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto md:px-20 px-4 banner my-20">
+      <div class="card relative" style="width: 45%;">
+        <div class="flex md:px-8 py-7">
+          <div class="garis"></div>
+          <div class="w-1/2 ml-5 self-center">
+            <h1 class="text-white">
+              Minimalis Funiture for Your Dream HOME<ion-icon
+                name="home"
+              ></ion-icon>
+            </h1>
+          </div>
+          <img
+            src="img/jumbotron.jpg"
+            class="absolute top-0 jumbotron py-7 md:block hidden object-fill"
+            style="left: 75%; height: 450px;"
+            data-aos="fade-left"
+          />
+        </div>
+        <div class="px-4 pb-12 mt-4 sm:mt-8 md:w-3/5">
+          <p class="text-white text-sm">
+            Simple, Minimal Elegant but Nordic chair. Designer, Created &
+            Manufactured in Indonesia. Additionaly a minimalist feast for the
+            design eye. Crafted in solid acacia wood,
+          </p>
+        </div>
+        <div class="kotak-satu"></div>
+        <div class="kotak-dua md:hidden"></div>
+      </div>
+    </div>
+    <div
+      class="container sosial justify-between mx-auto px-4 flex md:px-12 my-20"
+    >
+      <div class="flex">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram" class="mx-5"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </div>
+      <div class="flex arrow">
+        <button name="button" class="mr-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button name="button" class="text-white" style="background: #212121;">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="container mx-auto px-4 flex md:px-12 md:my-52 my-36 justify-between"
+    >
+      <div class="stayin md:w-1/2">
+        <div class="stayin-header md:w-1/4">
+          <h1 class="small-header">Make stayin a home vacation.</h1>
+          <hr style="width: 45%;" />
+        </div>
+        <div class="stayin-paragraf md:w-4/5 mt-8">
+          <p class="text-gray-400 text-explanation">
+            without a doubt, it's the most appreciated natural material use in
+            interior design, it's enjoyed enduring popularity for years and it
+            seems to still be on the rise. This surely result from the trend for
+            all kinds of crafts as well as increasing ecological awreness. We
+            all know about the highly popular tables and bookcases made of
+            pallets.
+          </p>
+        </div>
+        <button class="request" name="button">Request</button>
+      </div>
+      <div class="md:w-1/2 md:block hidden relative">
+        <img
+          src="img/chair.jpg"
+          class="object-fill mr-10 float-right"
+          style="height: 425px;"
+        />
+        <div class="kotak absolute -top-16 right-0"></div>
+      </div>
+    </div>
+    <div class="container promosi flex px-4 md:px-12 my-36 md:my-52">
+      <div class="md:block hidden w-1/3">
+        <img
+          src="img/wood.jpg"
+          class="object-fill"
+          style="
+            width: 270px !important;
+            height: 500px !important;
+            border-radius: 190px;
+          "
+        />
+      </div>
+      <div class="md:w-1/2 md:ml-16">
+        <div class="promote-header md:w-2/5">
+          <h1 class="small-header">what are the main advantages off wood?</h1>
+          <hr style="width: 33%;" />
+        </div>
+        <div class="md:w-4/5 mt-8 promote-paragraf">
+          <p class="text-gray-400 text-explanation">
+            The natural and traditional material of brick has made a great come
+            back! The lucky owners of exposed brick walls enjoy them proudly,
+            and the enthusiast of brick as contruction material happlily use it.
+          </p>
+        </div>
+        <button class="request" name="button">Request</button>
+      </div>
+    </div>
+    <div class="my-36 md:my-52 container-testimoni">
+      <div
+        class="testimoni relative z-10"
+        style="top: 50%; transform: translateY(-50%);"
+      >
+        <div class="text-center">
+          <h1
+            class="small-header text-white tracking-widest mb-8"
+            style="opacity: 1 !important;"
+          >
+            TESTIMONIAL
+          </h1>
+          <div class="testi-paragraf md:w-1/2 m-auto">
+            <p class="text-explanation text-white">
+              Welcome to very best in globally sourced premium goods. We offer
+              free shipping, free returns and a secure shopping experience
+            </p>
+          </div>
+          <button name="button" class="request view-more">VIEW MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="container ssc px-4 mx-auto md:px-12 my-36 md:mt-52 md:mb-26">
+      <div class="header m-auto md:w-1/2 ssc mb-24">
+        <h1 class="small-header leading-relaxed" style="text-align: center;">
+          Helps you transform <br />
+          your space into a fresh one
+        </h1>
+        <hr class="m-auto" style="width: 73%;" />
+      </div>
+      <div class="relative">
+        <div class="md:flex justify-center md:justify-between ssc-parent"></div>
+        <div class="hidden md:block absolute -top-8 -left-8"></div>
+        <div class="hidden md:block absolute -top-8 -right-8"></div>
+      </div>
+    </div>
+    <p class="text-center mb-6" style="font-weight: 700;">
+      Copyright 2021 | by
+      <span style="font-weight: bold !important;">Amienul Rana</span>
+    </p>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="utils/index.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </body>
+</html>

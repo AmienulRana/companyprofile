@@ -1,0 +1,401 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+.scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+}
+.progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 15%;
+  background: #212121;
+  opacity: 1;
+}
+.progressbar::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(10px);
+  background: #212121;
+}
+.progressbar::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(30px);
+  background: #212121;
+}
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 550;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+hr {
+  border: 1px solid black;
+  opacity: 1;
+}
+button {
+  outline: none !important;
+}
+button.request {
+  border: 2px solid black;
+  font-weight: 500;
+  padding: 4px 20px;
+  border-radius: 30px;
+  margin: 30px 0 20px;
+}
+.hamburger-menu svg {
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+.container.navbar .menu {
+  display: flex;
+  justify-content: space-between !important;
+  width: 38%;
+}
+.container.navbar .login button {
+  border-radius: 10px;
+  align-self: center;
+}
+
+.container.banner .card {
+  background: #212121;
+}
+.container.banner .card div.garis {
+  height: 210px;
+  width: 5px;
+  background: white;
+}
+.container.banner .card h1.text-white {
+  font-size: 2.25rem;
+  line-height: 50px !important;
+}
+.container.banner .card ion-icon {
+  border: 2px solid;
+  width: 30px;
+  height: 30px;
+  margin-left: 17px;
+  border-left-color: black;
+  border-bottom-color: black;
+}
+.container.banner .kotak-satu {
+  width: 55px;
+  height: 50px;
+  border: 3px solid #212121;
+  position: absolute;
+  bottom: -25px;
+  left: -15px;
+  z-index: -1;
+}
+.container.banner .kotak-dua {
+  width: 55px;
+  height: 50px;
+  border: 3px solid #212121;
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  z-index: -1;
+}
+.container.sosial ion-icon {
+  font-size: 26px;
+}
+.container.sosial .arrow button {
+  border: 2px solid black;
+  padding: auto 7px;
+  border-radius: 45%;
+}
+.container div.kotak {
+  height: 300px;
+  width: 230px;
+  background: #212121;
+  z-index: -1;
+}
+.container-testimoni {
+  background-image: url("../img/sofa.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100% !important;
+  background-position: 0 -300px;
+  height: 300px;
+  position: relative;
+  /* background-repeat: ; */
+}
+.container-testimoni::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  opacity: 0.75;
+  z-index: 1;
+}
+.container-testimoni button.view-more {
+  background: white;
+  color: black;
+  border: none;
+}
+.container.ssc .absolute {
+  height: 70px;
+  width: 70px;
+  background: #212121;
+  z-index: -1;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container.navbar {
+    overflow-x: hidden;
+  }
+  .container.navbar .menu-parent {
+    width: 85% !important;
+    margin: 40px 0 20px;
+    transition: 1s ease-in-out;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-200%);
+    z-index: 1;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .container.navbar .menu-parent.muncul {
+    transform: translateX(-50%) !important;
+  }
+  .container.navbar .menu-parent .menu {
+    width: 100% !important;
+  }
+  .container.navbar .menu-parent .menu h5 {
+    margin-top: 30px;
+    text-align: center !important;
+  }
+  .login button {
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+  }
+  .container.banner .card {
+    width: 90% !important;
+    margin: auto;
+  }
+  .container.banner .card .self-center {
+    width: 80% !important;
+  }
+  .container.banner .card .self-center h1 {
+    font-size: 31px !important;
+  }
+  .container.banner .card div.py-7 {
+    padding-left: 23px;
+  }
+  .container.banner .card div.garis {
+    height: 190px;
+    width: 5px;
+  }
+  .container .stayin-header hr {
+    width: 28% !important;
+  }
+  .container .promote-header {
+    width: 65%;
+  }
+  .stayin-header {
+    width: 55%;
+  }
+  .container-testimoni {
+    background-position: 0 -30px;
+  }
+  .child-ssc {
+    width: 90% !important;
+    margin-bottom: 80px !important;
+    margin: auto;
+  }
+  .child-ssc img {
+    display: block;
+    margin: auto;
+    height: 300px !important;
+    width: 75%;
+    object-fit: cover;
+  }
+  .child-ssc .ssc-paragraf {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .container.navbar {
+    overflow-x: hidden !important;
+  }
+  .container.navbar .menu-parent {
+    width: 80% !important;
+    margin: 40px 0 20px;
+    transform: translateX(-200%);
+    transition: 1s ease-in-out;
+    background: white;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(0);
+  }
+  .container.navbar .menu-parent.muncul {
+    transform: translateX(-50%) !important;
+  }
+  .container.navbar .menu-parent .menu {
+    width: 100% !important;
+  }
+  .container.navbar .menu-parent .menu h5 {
+    margin-top: 30px;
+    text-align: center !important;
+    opacity: 1 !important;
+  }
+  .container.banner .card {
+    width: 80% !important;
+    margin: auto;
+  }
+  .container.banner .card .self-center {
+    width: 70% !important;
+  }
+  .container.banner .card .self-center h1 {
+    font-size: 31px !important;
+  }
+  .container.banner .card div.py-7 {
+    padding-left: 23px;
+  }
+  .login button {
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+  }
+  .container .stayin-header {
+    width: 50%;
+  }
+  .container .stayin-header hr {
+    width: 25% !important;
+  }
+  .container .promote-header {
+    width: 45%;
+  }
+  .container-testimoni {
+    background-position: 0px -140px;
+  }
+  .child-ssc {
+    width: 90% !important;
+    margin-bottom: 80px !important;
+    margin: auto;
+  }
+  .child-ssc img {
+    display: block;
+    margin: auto;
+    height: 300px !important;
+    width: 75%;
+    object-fit: cover;
+  }
+  .child-ssc .ssc-paragraf {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .container.navbar .menu {
+    width: 75% !important;
+  }
+  .container.navbar .menu h5 {
+    margin-right: 13px !important;
+  }
+  .container.banner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .container.banner .card {
+    width: 55% !important;
+  }
+  .container.banner .card h1 {
+    font-size: 2.25rem;
+    line-height: 50px !important;
+  }
+  .container.banner img {
+    height: 380px !important;
+  }
+  .container .stayin-header {
+    width: 55% !important;
+  }
+  .container .stayin-header hr {
+    width: 38% !important;
+  }
+  .container .promote-header {
+    width: 65% !important;
+  }
+  .container .promote-paragraf {
+    width: 100% !important;
+  }
+  .container-testimonial .testi-paragraf {
+    background: red !important;
+  }
+  .container.scc .small-heading {
+    width: 70% !important;
+  }
+  .container.ssc .ssc-parent {
+    flex-wrap: wrap !important;
+  }
+  .container.ssc .child-ssc {
+    width: 45% !important;
+    margin-bottom: 70px;
+  }
+  .container.ssc .child-ssc:nth-child(3) {
+    margin: auto;
+  }
+  .container.ssc .child-ssc img {
+    height: 300px !important;
+    display: block;
+    margin: auto;
+  }
+  .container.ssc .relative .-top-8 {
+    top: -25px !important;
+    left: 25px !important;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 991.98px) and (max-width: 1200px) {
+  .container.banner .card {
+    width: 55% !important;
+  }
+  .container.banner img.jumbotron {
+    height: 480px !important;
+  }
+}
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  h1.small-header {
+    font-size: 26px !important;
+    font-weight: bold;
+  }
+  h1.leading-relaxed {
+    font-size: 33px !important;
+  }
+  p.texs-explanation {
+    font-weight: 500;
+    line-height: 25px;
+  }
+}
