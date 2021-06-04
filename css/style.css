@@ -1,47 +1,17 @@
-::-webkit-scrollbar {
-  width: 0;
-}
-.scrollPath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: black;
-  opacity: 0.5;
-}
-.progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 15%;
-  background: #212121;
-  opacity: 1;
-}
-.progressbar::before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  filter: blur(10px);
-  background: #212121;
-}
-.progressbar::after {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  filter: blur(30px);
-  background: #212121;
-}
 h1 {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 550;
+}
+h1.small-header {
+  font-size: 26px !important;
+  font-weight: bold;
+}
+h1.leading-relaxed {
+  font-size: 33px !important;
+}
+p.texs-explanation {
+  font-weight: 500;
+  line-height: 25px;
 }
 p {
   font-family: "Montserrat", sans-serif;
@@ -386,16 +356,46 @@ button.request {
   }
 }
 /* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-  h1.small-header {
-    font-size: 26px !important;
-    font-weight: bold;
+@media (min-width: 1399.98px) {
+  ::-webkit-scrollbar {
+    width: 0;
   }
-  h1.leading-relaxed {
-    font-size: 33px !important;
+  .scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
   }
-  p.texs-explanation {
-    font-weight: 500;
-    line-height: 25px;
+  .progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 15%;
+    background: #212121;
+    opacity: 1;
+  }
+  .progressbar::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: blur(10px);
+    background: #212121;
+  }
+  .progressbar::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: blur(30px);
+    background: #212121;
   }
 }
