@@ -41,7 +41,7 @@ objSsc.forEach((ssc) => {
 // sscParent.appendChild(strSsc)
 
 function writeSsc(ssc) {
-  return `<div class="child-ssc" style="width: 21%">
+  return `<div class="child-ssc" style="width: 21%" data-aos="fade-up">
     <img
       src="img/${ssc.img}"
       class="img-ssc shadow-2xl"
