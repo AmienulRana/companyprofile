@@ -356,7 +356,7 @@ button.request {
   }
 }
 /* X-Large devices (large desktops, less than 1400px) */
-@media (min-width: 1399.98px) {
+@media (min-width: 1200.98px) {
   ::-webkit-scrollbar {
     width: 0;
   }
