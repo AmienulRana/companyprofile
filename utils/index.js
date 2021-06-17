@@ -1,11 +1,6 @@
+alert("ini hanya website landing page, tidak ada lagi halaman selain ini");
 const menuParent = document.querySelector(".menu-parent");
 const sscParent = document.querySelector(".ssc-parent");
-const progressbar = document.querySelector(".progressbar");
-const totalHeight = document.body.scrollHeight - window.innerHeight;
-window.addEventListener("scroll", function () {
-  const progressHeight = (window.pageYOffset / totalHeight) * 100;
-  progressbar.style.height = progressHeight + "%";
-});
 window.addEventListener("click", (e) => {
   const target = e.target;
   if (target.classList.contains("svg-menu")) {
